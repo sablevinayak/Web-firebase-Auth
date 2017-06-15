@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forget password</title>
+	<script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyC1DrDk8f7t4gPrDrsDzRZQwz2a2rrB8xQ",
+	    authDomain: "studentzone-cdbfc.firebaseapp.com",
+	    databaseURL: "https://studentzone-cdbfc.firebaseio.com",
+	    projectId: "studentzone-cdbfc",
+	    storageBucket: "studentzone-cdbfc.appspot.com",
+	    messagingSenderId: "547435038931"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script type="text/javascript" src="main.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">    
+<div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+    <div class="panel panel-info" >
+        <div class="panel-heading">
+            <div class="panel-title">Forgot Password</div>
+        </div>     
+        <div style="padding-top:30px" class="panel-body" >
+            <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+            <form id="loginform" class="form-horizontal" role="form">
+                <div style="margin-bottom: 25px" class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="email" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                </div>
+
+                <div class="col-sm-12 controls">
+                    <input type="button" name="" id="btn-login" class="btn btn-success" onclick="sendPasswordReset()" value="Send">
+                </div>
+               
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+                
+</body>
+</html>
